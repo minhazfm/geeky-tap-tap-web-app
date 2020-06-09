@@ -247,6 +247,9 @@ header .navbar .navbar-brand {
 .logo_two img + img {
     display: none;
 }
+.mobile-logo {
+    display: none;
+}
 
 /*============ header_area_one css ============*/
 .navbar .side_menu {
@@ -394,6 +397,10 @@ header .navbar .navbar-brand {
 .content-black .logo_two img + img {
     display: block;
 }
+.content-black .mobile-logo,
+.content-black .mobile-dark-logo{
+    display: none !important;
+}
 
 .content-black .h_contact_info a {
     color: #101010;
@@ -414,6 +421,13 @@ header .navbar .navbar-brand {
 .content-black .menu_toggle .hamburger-cross span,
 .content-black .menu_toggle .hamburger span {
     background: #101010;
+}
+
+.content-black .burger_menu {
+    color: #000;
+}
+.content-black .burger_menu .dot_icon .dot {
+    background: #000;
 }
 
 /*=========== hamburger_menu_wrepper css ===========*/
@@ -1233,7 +1247,7 @@ header .navbar .navbar-brand {
 .footer_text p {
     margin-bottom: 0;
     font-size: 14px;
-    color: #aaaaaa;
+    color: #fff;
     line-height: 28px;
 }
 
@@ -1746,7 +1760,8 @@ header .navbar .navbar-brand {
 }
 
 .scroll_service_item p {
-    margin-bottom: 32px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .scroll_service_item .p_btn {
@@ -6318,10 +6333,10 @@ input::-webkit-inner-spin-button {
 }
 
 .section-custom .scroll_service_item h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -6330,7 +6345,6 @@ input::-webkit-inner-spin-button {
 
 .m_p {
     padding: 25px 25px;
-    background: #5F15C0;
 }
 .navbar-brand img {
     width: 75%;
@@ -6348,7 +6362,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* changing color for client-section */
-.content-black .h_contact_info a {
+/*.content-black .h_contact_info a {
     color: #fff;
 }
 .content-black .h_contact_info a + a:before {
@@ -6365,5 +6379,40 @@ input::-webkit-inner-spin-button {
 }
 .footer_text p {
     color: #fff;
-}
+}*/
 
+.header_area_one {
+    display: none;
+}
+/** ======= Pre-loader =======**/
+.preloader{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    overflow: hidden;
+}
+.loader {
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background: #c2aaff;
+
+}
+.loader .loader-counter {
+    top: 50%;
+    left: 50%;
+    font-size: 6em;
+    color: #f5f5f5;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+}

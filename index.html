@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/fullpage/fullpage.css">
@@ -13,22 +14,30 @@
     <link rel="stylesheet" href="vendors/magnify-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Eeky</title>
+    <title>Geeky Tap Tap</title>
 </head>
 
 <body>
-    <!--    header    -->
+   <div class="preloader">
+        <div class="loader">
+            <div class="loader-counter"></div>
+        </div>
+    </div>
+    
+    <!--    header area for desktop    -->
     <header class="header_area p_absoulte m_p">
         <nav class="navbar navbar-expand-lg" id="header">
             <div class="container-fluid">
                 <div class="logo_info">
                     <a class="navbar-brand logo_two" href="index.html">
-                        <img src="img/logo.png" alt="">
-                        <img src="img/dark_logo.png" alt="">
+                        <img class="desktop-logo" src="img/logo.png" alt="">
+                        <img class="mobile-logo" src="img/mobile-logo.png" alt="">
+                        <img class="mobile-dark-logo" src="img/mobile-logo-dark.png" alt="">
+                        <img class="desktop-dark-logo" src="img/dark_logo.png" alt="">
                     </a>
                     <div class="h_contact_info">
                         <a href="tel:+0074 215 2455">+0074 215 2455</a>
-                        <a href="mailto:contact@eeky.com">contact@eeky.com</a>
+                        <a href="mailto:support@smplinc.com">support@smplinc.com</a>
                     </div>
                 </div>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,35 +56,124 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto menu" id="menu1">
                         <li data-menuanchor="Home" class="nav-item">
-                            <a class="nav-link" href="#Home" >Home</a>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
-                        <li data-menuanchor="About" class="nav-item">
-                            <a class="nav-link" href="#About" >About</a>
+                        <li data-menuanchor="Vision" class="nav-item">
+                            <a class="nav-link" href="#Vision">Vision</a>
                         </li>
                         <li data-menuanchor="Services" class="nav-item">
-                            <a class="nav-link" href="#Services" >Services</a>
+                            <a class="nav-link" href="#Services">Services</a>
                         </li>
-                        <li data-menuanchor="Branding" class="nav-item">
-                            <a class="nav-link" href="#Branding" >Branding</a>
+                        <li data-menuanchor="Portfolio" class="nav-item">
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
                         </li>
-                        <li style="display: none;" data-menuanchor="Showrell" class="nav-item">
-                            <a class="nav-link" href="#Showrell">Showrell</a>
-                        </li>
-                        <li data-menuanchor="Clients" class="nav-item">
-                            <a class="nav-link" href="#Clients" >Clients</a>
+                        <li data-menuanchor="About" class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li data-menuanchor="Contact" class="nav-item">
                             <a class="nav-link" href="#Contact">Contact</a>
                         </li>
+
+
+
+                        <li style="display: none;" data-menuanchor="Clients" class="nav-item">
+                            <a class="nav-link" href="#Clients">Clients</a>
+                        </li>
+
                         <li style="display: none;" data-menuanchor="Newsletter" class="nav-item">
                             <a class="nav-link" href="#Newsletter">Newsletter</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
-    <!--    header    -->
+
+    <!--    header area for tablet, mobile   -->
+    <header class="header_area_one p_absoulte m_p">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-9 col-7">
+                    <div class="menu_left">
+                        <a class="navbar-brand logo_two" href="index.html">
+                            <img class="desktop-logo" src="img/logo.png" alt="">
+                            <img class="mobile-logo" src="img/mobile-logo.png" alt="">
+                            <img class="mobile-dark-logo" src="img/mobile-logo-dark.png" alt="">
+                            <img class="desktop-dark-logo" src="img/dark_logo.png" alt="">
+                        </a>
+                        <div class="h_contact_info">
+                            <a href="tel:+0074 215 2455">+0074 215 2455</a>
+                            <a href="mailto:support@smplinc.com">support@smplinc.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-5">
+                    <div class="menu_right">
+                        <div class="burger_menu">
+                            <span class="text" data-text="menu"></span>
+                            <div class="dot_icon">
+                                <span class="dot one"></span>
+                                <span class="dot two"></span>
+                                <span class="dot three"></span>
+                                <span class="dot four"></span>
+                                <span class="dot five"></span>
+                                <span class="dot six"></span>
+                                <span class="dot seven"></span>
+                                <span class="dot eight"></span>
+                                <span class="dot nine"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--    hamburger_menu for tablet, mobile   -->
+    <div class="hamburger_menu_wrepper" id="menu">
+        <div class="animation-box">
+            <div class="top_menu">
+                <a href=index.html><img src="img/logo.png" srcset="img/wlogo@2x.png 2x" alt="logo"></a>
+                <div class="burger_menu close_icon">
+                    <span class="text" data-text="Close"></span>
+                    <i class="icon_close"></i>
+                </div>
+            </div>
+            <div class="menu-box navbar">
+                <ul class="navbar-nav justify-content-end menu offcanfas_menu">
+                    <li data-menuanchor="Home" class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li data-menuanchor="Vision" class="nav-item">
+                        <a class="nav-link" href="#Vision">Vision</a>
+                    </li>
+                    <li data-menuanchor="Services" class="nav-item">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                    <li data-menuanchor="Portfolio" class="nav-item">
+                        <a class="nav-link" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li data-menuanchor="About" class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li data-menuanchor="Contact" class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+
+
+
+                    <li style="display: none;" data-menuanchor="Clients" class="nav-item">
+                        <a class="nav-link" href="#Clients">Clients</a>
+                    </li>
+
+                    <li style="display: none;" data-menuanchor="Newsletter" class="nav-item">
+                        <a class="nav-link" href="#Newsletter">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!--    wavescroll    -->
     <div id="wavescroll">
@@ -89,153 +187,13 @@
                         <div class="col-md-6">
                             <div class="w_content">
                                 <img class="circle_line" src="img/circle_line.png" alt="">
-                                <h2 class="wow">Creative Agency</h2>
+                                <h2 class="wow">Studio<br>Tech</h2>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="w_img_one w_img_cus">
-                                <img class="wow" src="img/laptop_w.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--    section_one    -->
-
-        <!--    section_two    -->
-
-        <div class="section wave_two_section_four" id="about-section">
-            <div class="t_four p_absoulte"> <img class="layer layer2" data-depth="0.30" src="img/home_three/h_pijom2.png" alt="Lee Brand"></div>
-            
-            <div class="container custom_container about-custom">
-                <div class="sec_title">
-                    <h2 class="s_section_title">About</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 mtc">
-                        <div class="team_item">
-                            <div class="team-img">
-                                <img src="img/about/team1.jpg" alt="">
-                                <ul class="list-unstyled social_link">
-                                    <li><a href="#"><i class="social_dribbble"></i><i class="social_dribbble"></i></a></li>
-                                    <li><a href="#"><i class="social_googleplus"></i><i class="social_googleplus"></i></a></li>
-                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
-                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4>Jhon Doe <span>/ Designer</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mtc">
-                        <div class="team_item">
-                            <div class="team-img">
-                                <img src="img/about/team2.jpg" alt="">
-                                <ul class="list-unstyled social_link">
-                                    <li><a href="#"><i class="social_dribbble"></i><i class="social_dribbble"></i></a></li>
-                                    <li><a href="#"><i class="social_googleplus"></i><i class="social_googleplus"></i></a></li>
-                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
-                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4>Jhon Doe <span>/ Designer</span></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mtc">
-                        <div class="team_item">
-                            <div class="team-img">
-                                <img src="img/about/team3.jpg" alt="">
-                                <ul class="list-unstyled social_link">
-                                    <li><a href="#"><i class="social_dribbble"></i><i class="social_dribbble"></i></a></li>
-                                    <li><a href="#"><i class="social_googleplus"></i><i class="social_googleplus"></i></a></li>
-                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
-                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4>Jhon Doe <span>/ Designer</span></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--    section_two    -->
-
-        <!--    section_three    -->
-        <div class="section wave_two_section_three third section-custom" id="services-section">
-            <div class="t_first p_absoulte"><img class="layer layer2" data-depth="-0.20" src="img/home_three/pijom.png" alt=""></div>
-            <div class="t_four p_absoulte"><img class="layer layer2" data-depth="0.30" src="img/home_three/triangle.png" alt=""></div>
-            <div class="t_five p_absoulte"><img class="layer layer2" data-depth="0.10" src="img/home_three/square.png" alt=""></div>
-            <div class="intro">
-                <div class="container custom_container">
-                    <h2 class="s_section_title">Our Services</h2>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="scroll_service_item">
-                                <div class="number">1.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon.png" alt="">
-                                <a href="#">
-                                    <h3 class="">Web Designing and Development</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="scroll_service_item">
-                                <div class="number">2.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon_2.png" alt="">
-                                <a href="#">
-                                    <h3>SEO and Digital Marketing</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="scroll_service_item">
-                                <div class="number">3.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon_2.png" alt="">
-                                <a href="#">
-                                    <h3>Mobile Application Development</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pt-4">
-                            <div class="scroll_service_item">
-                                <div class="number">4.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon.png" alt="">
-                                <a href="#">
-                                    <h3 class="">Web Designing and Development</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pt-4">
-                            <div class="scroll_service_item">
-                                <div class="number">5.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon_2.png" alt="">
-                                <a href="#">
-                                    <h3>SEO and Digital Marketing</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pt-4">
-                            <div class="scroll_service_item">
-                                <div class="number">6.</div>
-                                <img class="icon p_absoulte" src="img/home_three/s_icon_2.png" alt="">
-                                <a href="#">
-                                    <h3>Mobile Application Development</h3>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit sed eiu smod tempor incididunt ut</p>
-                                <a href="#" class="p_btn">Case Study</a>
+                                <img class="wow" src="img/hero-image.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -267,14 +225,14 @@
                         <div class="col-lg-6">
                             <div class="w_portfolio_img">
                                 <div class="round p_absoulte"></div>
-                                <img src="img/home_three/profile.jpg" alt="">
+                                <img src="img/vision-image.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="w_content_two">
-                                <h2>Branding and Digital experiences</h2>
-                                <p>Award-winning multidisciplinary digital agency based in Italy. We are brains with a lot of open tabs, without bonds to creativity and imagination.</p>
-                                <a href="#" class="p_btn">Case Study</a>
+                                <h2>Vision</h2>
+                                <h3 class="text-white">You’ve got a vision, we can make it reality</h3>
+                                <p>Providing a tailored digital solution for your business. Let us do what we know, so you can do what you know</p>
                             </div>
                         </div>
                     </div>
@@ -282,18 +240,63 @@
             </div>
         </div>
 
-        <!--    section_four    -->
+        <!--    section_three    -->
+        <div class="section wave_two_section_three third section-custom" id="services-section">
+            <div class="t_first p_absoulte"><img class="layer layer2" data-depth="-0.20" src="img/home_three/pijom.png" alt=""></div>
+            <div class="t_four p_absoulte"><img class="layer layer2" data-depth="0.30" src="img/home_three/triangle.png" alt=""></div>
+            <div class="t_five p_absoulte"><img class="layer layer2" data-depth="0.10" src="img/home_three/square.png" alt=""></div>
+            <div class="intro">
+                <div class="container custom_container">
+                    <h2 class="s_section_title">Our Services</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="scroll_service_item">
+                                <h3 class="">API + Cloud Architecture</h3>
+                                <p>Proficient at deploying back-end services through cloud providers (AWS, Azure, GCP)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="scroll_service_item">
+                                <h3>Emerging Technologies</h3>
+                                <p>Capabilities to create browser extensions (Google Chrome, Microsoft Edge), smart speaker integrations (Amazon Alexa, Google Assistant) and wearables (Apple watchOS, Google Wear OS)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="scroll_service_item">
+                                <h3>Graphic + Video Design</h3>
+                                <p>Creative and unique design solutions for any purpose (Commercials, Real Estate, Social Media Broadcasts)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4">
+                            <div class="scroll_service_item">
+                                <h3 class="">Mobile App Development</h3>
+                                <p>Expertise with native mobile technologies (Android and iOS), as well as hybrid platforms (Flutter, Ionic, React Native)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 pt-4">
+                            <div class="scroll_service_item">
+                                <h3>Web Design and Production</h3>
+                                <p>Knowledgeable with most popular front-end web frameworks and responsive design standards (Angular, React)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--    section_five    -->
         <div class="section wave_two_section_five" id="showrell-section">
             <div class="bg-title">
-                <div class="layer layer2" data-depth="-0.20">Showrell</div>
+                <div class="layer layer2" data-depth="-0.20">Portfolio</div>
             </div>
             <div class="t_first p_absoulte"><img class="layer layer2" data-depth="-0.20" src="img/home_three/wave.png" alt=""></div>
             <div class="t_two p_absoulte"><img class="layer layer2" data-depth="0.20" src="img/home_three/blue_plan.png" alt=""></div>
             <div class="intro">
                 <div class="container custom_container">
-                    <h2 class="s_section_title text-center">Showrell</h2>
+                    <h2 class="s_section_title text-center">Portfolio</h2>
                     <div class="sc_video_inner">
                         <img class="p_absoulte video_bg" src="img/home_three/video_bg.png" alt="">
                         <div class="dot_l p_absoulte"><img class="layer layer2" data-depth="0.20" src="img/home_three/v_dot.png" alt=""></div>
@@ -306,8 +309,61 @@
                 </div>
             </div>
         </div>
-        
-        <!--    section_five    -->
+
+        <!--    section_two    -->
+        <div class="section wave_two_section_four" id="about-section">
+            <div class="t_four p_absoulte"> <img class="layer layer2" data-depth="0.30" src="img/home_three/h_pijom2.png" alt=""></div>
+            <div class="bg-title">
+                <div class="layer layer2" data-depth="-0.20">About Us</div>
+            </div>
+            <div class="container custom_container about-custom">
+                <div class="sec_title">
+                    <h2 class="s_section_title">About</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mtc">
+                        <div class="team_item">
+                            <div class="team-img">
+                                <img src="img/about/team1.jpg" alt="">
+                                <ul class="list-unstyled social_link">
+                                    <li><a href="#"><i class="social_linkedin"></i><i class="social_linkedin"></i></a></li>
+                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
+                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4>Jhon Doe <span>/ Designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mtc">
+                        <div class="team_item">
+                            <div class="team-img">
+                                <img src="img/about/team2.jpg" alt="">
+                                <ul class="list-unstyled social_link">
+                                    <li><a href="#"><i class="social_linkedin"></i><i class="social_linkedin"></i></a></li>
+                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
+                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4>Jhon Doe <span>/ Designer</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mtc">
+                        <div class="team_item last-team">
+                            <div class="team-img">
+                                <img src="img/about/team3.jpg" alt="">
+                                <ul class="list-unstyled social_link">
+                                    <li><a href="#"><i class="social_linkedin"></i><i class="social_linkedin"></i></a></li>
+                                    <li><a href="#"><i class="social_facebook"></i><i class="social_facebook"></i></a></li>
+                                    <li><a href="#"><i class="social_twitter"></i><i class="social_twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4>Jhon Doe <span>/ Designer</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--    section_six    -->
         <div class="section wave_two_section_six" id="clients-section">
@@ -334,7 +390,6 @@
                 </div>
             </div>
         </div>
-        <!--    section_six    -->
 
         <!--    section_seven    -->
         <div class="section wave_two_section_seven" id="contact-section">
@@ -358,7 +413,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <form action="" class="contact_form_box" method="" id="contactForm">
+                            <form action="php/contact-form.php" class="contact_form_box" method="post" id="contactForm">
                                 <div class="form-group text_box">
                                     <input type="text" name="name" placeholder="Your Name">
                                 </div>
@@ -375,7 +430,6 @@
                 </div>
             </div>
         </div>
-        <!--    section_seven-->
 
         <!--    section_eight    -->
         <div class="section wave_two_section_eight" id="newsletter-section">
@@ -388,7 +442,7 @@
                 <div class="container custom_container">
                     <div class="footer_text">
                         <h3>Subscirbe Newsletter</h3>
-                        <form action="#" class="subscribe_info">
+                        <form action="php/subscribe.php" method="post" class="subscribe_info">
                             <input type="text" name="EMAIL" class="form-control memail" placeholder="Your email">
                             <button class="btn" type="submit"><i class="arrow_right"></i></button>
                         </form>
@@ -401,9 +455,7 @@
                 </div>
             </div>
         </div>
-        <!--    section_eight    -->
     </div>
-    <!--    wavescroll    -->
 
     <!--    full_footer    -->
     <footer class="full_footer p_absoulte">
@@ -413,7 +465,7 @@
                     <ul class="list-unstyled social_icon social_icon_two">
                         <li><a href="#"><i class="social_twitter"></i></a></li>
                         <li><a href="#"><i class="social_facebook"></i></a></li>
-                        <li><a href="#"><i class="social_googleplus"></i></a></li>
+                        <li><a href="#"><i class="social_linkedin"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-6">
@@ -425,7 +477,7 @@
             </div>
         </div>
     </footer>
-    <!--    full_footer    -->
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

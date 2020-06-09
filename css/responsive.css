@@ -62,8 +62,8 @@
         padding-left: 0;
         padding-right: 74px;
     }
-    .scroll_service_item{
-        padding: 40px 27px;
+    .scroll_service_item {
+        padding: 20px 20px;
     }
     .scroll_service_item .number{
         margin-bottom: 35px;
@@ -123,8 +123,11 @@
     .hamburger_menu_wrepper .top_menu{
         padding: 18px 12px 0px 22px;
     }
+    
 }
+
 @media (max-width:1366px){
+    
     .contact_form_box {
         padding-right: 65px;
     }
@@ -305,6 +308,9 @@
     .header_area_four .logo img + img{
         display: block;
     }
+    .content-black .mobile-logo {
+        display: block!important;
+    }
     .fullpage_main_area  .w_mockup_img .img_screen.one,.fullpage_main_area  .w_mockup_img .img_screen.two,.fullpage_main_area  .w_mockup_img .img_screen.three,.multi_left_img .w_mockup_img .img_four{
         animation: fadeIn .9s both; 
     }
@@ -314,6 +320,12 @@
 }
 
 @media (max-width:991px){
+    .header_area {
+        display: none;
+    }
+    .header_area_one {
+        display: block;
+    }
     .sc_video_inner{
         height: 400px;
     }
@@ -1034,8 +1046,9 @@
         margin-top: 50px;
     }
     #services-section .s_section_title {
-        margin-top: 50px;
-    }
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }    
     .section-custom .custom_container {
         padding-left: 55px;
         padding-right: 55px;
@@ -1053,7 +1066,10 @@
         color: #fff;
     }
     .content-black .menu_toggle .hamburger-cross span, .content-black .menu_toggle .hamburger span {
-        background: #fff;
+        background: #000;
+    }
+    .content-black .menu > .nav-item > .nav-link {
+        color: #fff;
     }
 }
 @media (min-width:768px) and (max-width: 991.98px) {
@@ -1085,7 +1101,6 @@
     
     .full_footer {
         padding: 15px 0px 15px;
-        background: #5F15C0;
     }
     .content-black .social_icon li a, .content-black .h_slider_nav span {
         color: #fff;
@@ -1100,6 +1115,26 @@
 }
 
 @media (max-width: 575.98px) {
+    
+    .logo_two img + img {
+        display: block;
+    }
+    .desktop-logo {
+        display: none;
+    }
+    
+    .desktop-dark-logo,
+    .mobile-dark-logo{
+        display: none !important;
+    }
+    .content-black .mobile-logo {
+        display: none !important;
+    }
+    
+    .content-black .mobile-dark-logo{
+        display: block!important;
+    }
+        
     .w_content h2 {
         font-size: 60px;
         line-height: 70px;
@@ -1125,12 +1160,17 @@
     #about-section {
         padding: 0px 0 150px;
     }
+    
+    #about-section .fp-scrollable {
+        overflow: initial;
+        position: relative;
+    }
     #clients-section .s_section_title{
         margin-top: 30px;
         text-align: center;
     }
     .team_item h4 {
-        
+        margin-bottom: 25px;
     }
     .sc_video_inner .dot_l,
     .sc_video_inner .dot_r,

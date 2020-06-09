@@ -1,4 +1,17 @@
 ;(function($){
+    // Pre-loader
+    setTimeout(function() {
+        var e = 0,
+            t = 0,
+            n = setInterval(function() {
+                $(".loader .loader-counter").html(t + "%"),
+                    $(".loader").css("width", t + "%"), t++, 101 == ++e && (clearInterval(n),
+                    $(".preloader,.loader").fadeOut(200),
+                    $(".main-section, .site-header, .clb-social, .purchase-theme").addClass("visible"),
+                    $(".tablet, .laptop, .phone").addClass("active"))
+            }, 12)
+    });
+    
 	// Navbar Fixed  
     function navbarFixed(){
         if ( $('.sticky_nav').length ){ 
@@ -36,16 +49,16 @@
             animateAnchor: true,
             css3: true,
             verticalCentered: true,
-            anchors: ['Home', 'About', 'Services', 'Branding', 'Showrell', 'Clients', 'Contact', 'Newsletter'],
+            anchors: ['Home', 'Vision', 'Services', 'Portfolio', 'About', 'Clients', 'Contact', 'Newsletter'],
             menu: '#menu1',
             afterResponsive: function (isResponsive) {},
             afterLoad: function(anchorLink, index){
 		    	if (index == 6){
-		            $('.header_area, .full_footer').addClass('content-black');
+		            $('.header_area, .header_area_one, .full_footer').addClass('content-black');
 		            $('#fp-nav').addClass('white');
 		    	}
 		    	else{
-	            	$('.header_area, .full_footer').removeClass('content-black');
+	            	$('.header_area, .header_area_one, .full_footer').removeClass('content-black');
 	            	$('#fp-nav').removeClass('white');
 	            }   
                 if ($('.w_footer_area,.wave_two_section_eight').hasClass('active')) {
@@ -71,6 +84,10 @@
         $(this).toggleClass("actives");
     });
     $(".close_icon").on('click', function () {
+        $('.hamburger_menu_wrepper').removeClass("mySideBar");
+        $('.close_icon').removeClass("actives");
+    });
+    $(".hamburger_menu_wrepper .nav-link").on('click', function () {
         $('.hamburger_menu_wrepper').removeClass("mySideBar");
         $('.close_icon').removeClass("actives");
     });
