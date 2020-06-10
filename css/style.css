@@ -477,7 +477,7 @@ header .navbar .navbar-brand {
 
 .hamburger_menu_wrepper .top_menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: absolute;
     right: 0px;
     padding: 50px 27px 0px 45px;
@@ -503,6 +503,11 @@ header .navbar .navbar-brand {
     background: transparent;
     padding-left: 0;
     padding-right: 0;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar .offcanfas_menu > .nav-item {
