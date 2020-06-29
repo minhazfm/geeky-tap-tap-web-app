@@ -2229,17 +2229,10 @@ header .navbar .navbar-brand {
 }
 
 .contact_form_box .p_btn {
-    border-radius: 0;
+    background-color: #fff;
     font-size: 13px;
     color: #101010;
     float: right;
-
-    -webkit-appearance: none; /*Safari/Chrome*/
-    -moz-appearance: none; /*Firefox*/
-    -ms-appearance: none; /*IE*/
-    -o-appearance: none; /*Opera*/
-    appearance: none;
-    -webkit-border-radius: 0; 
 }
 
 /*============ wave_two_section_eight css ===========*/
